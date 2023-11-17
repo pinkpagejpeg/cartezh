@@ -1,0 +1,49 @@
+@import "../../../styles/mixins";
+@include form_title;
+
+.order_form {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        width: 86%;
+    }
+
+    &__wrapper > h3 {
+        text-align: center;
+        width: 37%;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__input {
+        height: 50px;
+        width: 400px;
+        border-radius: 10px;
+        border: 3px solid #1D1D1D;
+        background: #FFFFFF;
+        color: #1D1D1D;
+        font-family: "Dela Gothic One";
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 17px;
+        margin-bottom: 20px;
+    }
+
+    &__submit {
+        border-radius: 60px;
+        border: 3px solid #1D1D1D;
+        background: #FFCD36;
+        padding: 13px 50px 14px;
+        color: #1D1D1D;
+        font-family: "Dela Gothic One";
+        font-size: 16px;
+        max-width: 275px;
+        cursor: pointer;
+    }
+}

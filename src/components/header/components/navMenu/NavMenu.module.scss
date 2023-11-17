@@ -1,0 +1,24 @@
+$dark_gray: #1D1D1D;
+
+.header {
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu_item {
+        list-style-type: none;
+        margin-right: 60px;
+    }
+
+    &__menu_item:nth-last-child(1) {
+        margin-right: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $dark_gray;
+        font-family: "Dela Gothic One";
+        font-size: 16px;
+    }
+}

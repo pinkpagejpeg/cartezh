@@ -1,0 +1,27 @@
+@import '../../../../styles/mixins';
+@include main_text;
+
+$yellow: #FFCD36;
+$dark_gray: #1D1D1D;
+
+.pros_item {
+    &__wrapper {
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    &__wrapper > p {
+        text-align: center;
+    }
+
+    &__title {
+        color: $dark_gray;
+        text-align: center;
+        font-family: "Dela Gothic One";
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+}

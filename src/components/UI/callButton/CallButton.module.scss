@@ -1,0 +1,13 @@
+$yellow: #FFCD36;
+$dark_gray: #1D1D1D;
+
+.call_button {
+    border-radius: 60px;
+    background: $dark_gray;
+    padding: 13px 50px 14px;
+    color: $yellow;
+    font-family: "Dela Gothic One";
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}

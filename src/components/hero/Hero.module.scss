@@ -1,0 +1,37 @@
+@import "../../styles/mixins";
+@include main_text;
+
+.hero {
+    &__wrapper {
+        display: flex;
+        margin-bottom: 341px;
+    }
+
+    &__info {
+        margin-top: 150px;
+    }
+
+    &__info > p {
+        max-width: 542px;
+        margin: 14px 0 46px 0;
+    }
+
+    &__title {
+        font-family: "Oi";
+        font-size: 60px;
+        letter-spacing: 6px;
+        color: #1d1d1d;
+        -webkit-text-fill-color: #FFCD36;
+        -webkit-text-stroke-width: 1.1px;
+    }
+
+    &__scroll {
+        position: absolute;
+        margin: 280px 0 0 366px;
+    }
+
+    &__image {
+        position: absolute;
+        margin-left: 620px;
+    }
+}

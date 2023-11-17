@@ -1,0 +1,33 @@
+@mixin section_title {
+    .section_title {
+        font-family: "Oi";
+        font-size: 48px;
+        letter-spacing: 1px;
+        color: #1d1d1d;
+        font-weight: 400;
+        -webkit-text-fill-color: #FFCD36;
+        -webkit-text-stroke-width: 2px;
+        margin-bottom: 20px;
+    }
+}
+
+@mixin main_text {
+    .main_text {
+        color: #1D1D1D;
+        font-family: "Cormorant Garamond";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+@mixin form_title {
+    .form_title {
+        color: #1D1D1D;
+        font-family: "Oi";
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 2.4px;
+        margin-bottom: 20px;
+    }
+}
