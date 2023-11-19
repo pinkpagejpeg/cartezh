@@ -1,5 +1,7 @@
 @import "../../../../styles/mixins";
 @include form_title;
+@include form_input;
+@include form_submit;
 
 $yellow: #FFCD36;
 $dark_gray: #1D1D1D;
@@ -23,28 +25,17 @@ $dark_gray: #1D1D1D;
         align-items: center;
     }
 
-    &__input {
-        height: 50px;
+    &__form > input[type="text"] {
         width: 353px;
-        border-radius: 10px;
-        border: 3px solid $dark_gray;
-        background: #FFFFFF;
-        color: $dark_gray;
-        font-family: "Dela Gothic One";
-        font-size: 14px;
-        font-weight: 400;
-        padding-left: 17px;
-        margin-bottom: 20px;
     }
 
-    &__submit {
-        border-radius: 60px;
+    &__form > input[type="tel"] {
+        width: 353px;
+    }
+
+    &__form > input[type="submit"] {
         background: $dark_gray;
-        padding: 13px 50px 14px;
         color: $yellow;
-        font-family: "Dela Gothic One";
-        font-size: 16px;
-        max-width: 275px;
-        cursor: pointer;
+        max-width: 264px;
     }
 }

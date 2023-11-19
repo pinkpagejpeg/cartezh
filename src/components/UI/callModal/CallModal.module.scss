@@ -1,0 +1,68 @@
+@import './../../../styles/mixins';
+@include form_title;
+@include form_input;
+@include form_submit;
+
+$yellow: #FFCD36;
+$dark_gray: #1D1D1D;
+
+.callModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(29, 29, 29, 0.80);
+    display: none;
+}
+
+.callModal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+}
+
+.call_form {
+    &__modal_content {
+        padding: 20px 40px 60px 40px;
+        border-radius: 20px;
+        background: #FFFFFF;
+    }
+
+    &__modal_content > h3 {
+        text-align: center;
+    }
+
+    &__close_wrapper {
+        display: flex;
+        justify-content: end;
+        margin-right: -20px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__form > input[type="text"] {
+        width: 353px;
+    }
+
+    &__form > input[type="tel"] {
+        width: 353px;
+    }
+
+    &__form > input[type="submit"] {
+        background: $dark_gray;
+        color: $yellow;
+        max-width: 264px;
+    }
+}
+
+.button_close {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
