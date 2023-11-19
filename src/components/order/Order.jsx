@@ -1,10 +1,10 @@
 import React from 'react'
 import classes from './Order.module.scss'
-import OrderForm from './orderForm/OrderForm';
+import OrderForm from './orderForm/OrderForm'
 import order_car from './../../assets/images/order_car.png'
 
 const Order = () => {
-    return ( 
+    return (
         <div className={classes.order__wrapper}>
             <h2 className={classes.section_title}>Заказать запчасти</h2>
             <p className={classes.main_text}>Предварительные выводы неутешительны: синтетическое тестирование предполагает независимые способы реализации поставленных обществом задач. Безусловно, начало повседневной работы по формированию позиции однозначно определяет каждого участника как способного принимать собственные решения касаемо переосмысления внешнеэкономических политик. </p>
@@ -22,10 +22,10 @@ const Order = () => {
                     <p className={classes.main_text}>Заказ будет бесплатно доставлен в удобное для вас время</p>
                 </div>
             </div>
-            <img className={classes.order__image} src={order_car} alt="Order car"></img>
-            <OrderForm/>
+            <img className={classes.order__image} src={order_car} alt="Order car" />
+            <OrderForm />
         </div>
-     );
+    );
 }
- 
+
 export default Order;

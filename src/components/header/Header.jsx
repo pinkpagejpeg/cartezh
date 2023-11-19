@@ -5,13 +5,13 @@ import OrderButton from './../UI/orderButton/OrderButton'
 import NavMenu from './components/navMenu/NavMenu'
 
 const Header = () => {
-    return ( 
-        <div className={classes.header__wrapper}>
-            <img className={classes.header__logo} src={logo} alt="logo"></img>
-            <NavMenu/>
+    return (
+        <header className={classes.header__wrapper}>
+            <img className={classes.header__logo} src={logo} alt="logo" />
+            <NavMenu />
             <OrderButton>Отправить заявку</OrderButton>
-        </div>
-     );
+        </header>
+    );
 }
- 
+
 export default Header;

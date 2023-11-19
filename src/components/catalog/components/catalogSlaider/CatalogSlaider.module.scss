@@ -1,0 +1,31 @@
+$dark_gray: #1D1D1D;
+
+.catalog_slaider {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__mainbox {
+        width: 1165px;
+        height: 610px;
+        overflow: hidden;
+        background-image: url('../../../../assets/images/slaider_background.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__line {
+        width: 3450px;
+        height: 491px;
+        display: flex;
+        position: relative;
+        left: 0;
+        transition: all ease 1s;
+        padding: 60px 0 59px;
+    }
+
+    &__buttons {
+        cursor: pointer;
+    }
+}

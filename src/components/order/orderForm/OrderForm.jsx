@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './OrderForm.module.scss'
 
 const OrderForm = () => {
-    return ( 
+    return (
         <div className={classes.order_form__wrapper}>
             <h3 className={classes.form_title}>Форма заказа</h3>
             <form className={classes.order_form__form}>
@@ -13,7 +13,7 @@ const OrderForm = () => {
                 <input type="submit" className={classes.order_form__submit} value="Отправить заявку"></input>
             </form>
         </div>
-     );
+    );
 }
- 
+
 export default OrderForm;

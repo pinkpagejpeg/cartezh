@@ -1,0 +1,35 @@
+@import '../../styles/mixins';
+@include section_title;
+@include main_text;
+
+$yellow: #FFCD36;
+$dark_gray: #1D1D1D;
+$light_gray: #F2F2F2;
+
+.contacts {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    &__contentbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 46%;
+        margin-right: 80px;
+    }
+
+    &__info > p {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}

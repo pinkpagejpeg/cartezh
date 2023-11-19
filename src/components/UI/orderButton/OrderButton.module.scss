@@ -1,9 +1,12 @@
+$yellow: #FFCD36;
+$dark_gray: #1D1D1D;
+
 .order_button {
     border-radius: 60px;
-    border: 3px solid #1D1D1D;
-    background: #FFCD36;
+    border: 3px solid $dark_gray;
+    background: $yellow;
     padding: 13px 50px 14px;
-    color: #1D1D1D;
+    color: $dark_gray;
     font-family: "Dela Gothic One";
     font-size: 16px;
     cursor: pointer;

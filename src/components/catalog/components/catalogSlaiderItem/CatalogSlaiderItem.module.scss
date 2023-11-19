@@ -1,0 +1,27 @@
+@import '../../../../styles/mixins';
+@include main_text;
+
+.slaider_item {
+    &__wrapper {
+        border-radius: 20px;
+        border: 3px solid #1D1D1D;
+        background: #FFF;
+        padding: 20px 30px 54px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 22px;
+    }
+
+    &__price {
+        margin-top: 12px;
+        color: #1D1D1D;
+        font-family: "Dela Gothic One";
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    &__wrapper > p {
+        margin: 10px 0 28px;
+    }
+}
