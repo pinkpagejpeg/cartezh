@@ -5,7 +5,7 @@ import ContactsForm from './components/contactsForm/ContactsForm';
 
 const Contacts = () => {
     return (
-        <div className={classes.contacts__wrapper}>
+        <div id="contacts" className={classes.contacts__wrapper}>
             <h2 className={classes.section_title}>Контакты</h2>
             <div className={classes.contacts__contentbox}>
                 <div className={classes.contacts__info}>

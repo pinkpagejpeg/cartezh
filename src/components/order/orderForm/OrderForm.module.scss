@@ -3,8 +3,12 @@
 @include form_input;
 @include form_submit;
 
+$lemon_yellow: #FFED4B;
 $yellow: #FFCD36;
+$orange: #FFA336;
 $dark_gray: #1D1D1D;
+$gray: #7D7D7D;
+$light_gray: #F2F2F2;
 
 .order_form {
     &__wrapper {
@@ -39,5 +43,20 @@ $dark_gray: #1D1D1D;
         background: $yellow;
         color: $dark_gray;
         max-width: 275px;
+        transition: all .3s linear;
+    }
+
+    &__form > input[type="submit"]:hover {
+        background: $orange;
+    }
+    
+    &__form > input[type="submit"]:disabled {
+        background: $gray;
+        color: $light_gray;
+        cursor: default;
+    }
+    
+    &__form > input[type="submit"]:enabled:active {
+        background: $lemon_yellow;
     }
 }

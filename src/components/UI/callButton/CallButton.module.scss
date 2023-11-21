@@ -1,5 +1,9 @@
+$lemon_yellow: #FFED4B;
 $yellow: #FFCD36;
+$orange: #FFA336;
 $dark_gray: #1D1D1D;
+$gray: #7D7D7D;
+$light_gray: #F2F2F2;
 
 .call_button {
     border-radius: 60px;
@@ -10,4 +14,19 @@ $dark_gray: #1D1D1D;
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
+    transition: all .3s linear;
+}
+
+.call_button:hover {
+    color: $orange;
+}
+
+.call_button:disabled {
+    background: $gray;
+    color: $light_gray;
+    cursor: default;
+}
+
+.call_button:enabled:active {
+    color: $lemon_yellow;
 }

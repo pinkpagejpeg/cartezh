@@ -1,4 +1,5 @@
 $dark_gray: #1D1D1D;
+$gray: #7D7D7D;
 
 .header {
     &__menu {
@@ -16,9 +17,36 @@ $dark_gray: #1D1D1D;
     }
 
     &__link {
+        position: relative;
         text-decoration: none;
         color: $dark_gray;
         font-family: "Dela Gothic One";
         font-size: 16px;
+        transition: all .3s linear;
     }
+}
+
+.header__link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $dark_gray;
+    transition: all .3s ease;
+}
+
+.header__link:hover::after {
+    width: 100%;
+    margin-left: 16px;
+}
+
+.header__link:disabled {
+    color: $gray;
+    cursor: default;
+}
+
+.header__link:active::after {
+    margin-left: 0;
 }

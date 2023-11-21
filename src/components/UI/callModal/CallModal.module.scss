@@ -3,8 +3,12 @@
 @include form_input;
 @include form_submit;
 
+$lemon_yellow: #FFED4B;
 $yellow: #FFCD36;
+$orange: #FFA336;
 $dark_gray: #1D1D1D;
+$gray: #7D7D7D;
+$light_gray: #F2F2F2;
 
 .callModal {
     position: fixed;
@@ -58,6 +62,21 @@ $dark_gray: #1D1D1D;
         background: $dark_gray;
         color: $yellow;
         max-width: 264px;
+        transition: all .3s linear;
+    }
+
+    &__form > input[type="submit"]:hover {
+        color: $orange;
+    }
+    
+    &__form > input[type="submit"]:disabled {
+        background: $gray;
+        color: $light_gray;
+        cursor: default;
+    }
+    
+    &__form > input[type="submit"]:enabled:active {
+        color: $lemon_yellow;
     }
 }
 

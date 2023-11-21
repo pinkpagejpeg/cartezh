@@ -5,7 +5,7 @@ import order_car from './../../assets/images/order_car.png'
 
 const Order = () => {
     return (
-        <div className={classes.order__wrapper}>
+        <div id="order" className={classes.order__wrapper}>
             <h2 className={classes.section_title}>Заказать запчасти</h2>
             <p className={classes.main_text}>Предварительные выводы неутешительны: синтетическое тестирование предполагает независимые способы реализации поставленных обществом задач. Безусловно, начало повседневной работы по формированию позиции однозначно определяет каждого участника как способного принимать собственные решения касаемо переосмысления внешнеэкономических политик. </p>
             <div className={classes.order__steps}>

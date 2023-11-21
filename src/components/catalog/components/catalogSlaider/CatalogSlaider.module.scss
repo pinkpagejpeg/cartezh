@@ -1,4 +1,7 @@
 $dark_gray: #1D1D1D;
+$orange: #FFA236;
+$yellow: #FFED4B;
+$gray: #7D7D7D;
 
 .catalog_slaider {
     &__wrapper {
@@ -16,7 +19,7 @@ $dark_gray: #1D1D1D;
     }
 
     &__line {
-        width: 3450px;
+        width: 2330px;
         height: 491px;
         display: flex;
         position: relative;
@@ -28,4 +31,24 @@ $dark_gray: #1D1D1D;
     &__buttons {
         cursor: pointer;
     }
+
+    &__next {
+        fill: none;
+        stroke-width: 4;
+        stroke: $dark_gray;
+        stroke-linecap: round;
+        transition: all .3s linear;
+    }
+}
+
+.catalog_slaider__next:hover {
+    stroke: $orange;
+}
+
+.catalog_slaider__next:active {
+    stroke: $yellow;
+}
+
+.catalog_slaider__next:disabled {
+    stroke: $gray;
 }
