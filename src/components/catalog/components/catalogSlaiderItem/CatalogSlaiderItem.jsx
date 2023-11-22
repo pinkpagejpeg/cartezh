@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import classes from './CatalogSlaiderItem.module.scss'
-import OrderButton from '../../../UI/orderButton/OrderButton'
-import OrderModal from '../../../UI/orderModal/OrderModal'
+import OrderButton from '../../../UI/buttons/orderButton/OrderButton'
+import OrderModal from '../../../UI/modals/orderModal/OrderModal'
 
 const CatalogSlaiderItem = (props) => {
     const [orderModalVisible, setOrderModalVisible] = useState(false)

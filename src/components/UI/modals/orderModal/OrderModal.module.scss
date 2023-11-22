@@ -1,4 +1,4 @@
-@import './../../../styles/mixins';
+@import './../../../../styles/mixins';
 @include form_title;
 @include form_input;
 @include form_submit;
@@ -10,7 +10,7 @@ $dark_gray: #1D1D1D;
 $gray: #7D7D7D;
 $light_gray: #F2F2F2;
 
-.callModal {
+.orderModal {
     position: fixed;
     top: 0;
     left: 0;
@@ -20,14 +20,14 @@ $light_gray: #F2F2F2;
     display: none;
 }
 
-.callModal.active {
+.orderModal.active {
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 101;
 }
 
-.call_form {
+.order_form {
     &__modal_content {
         padding: 20px 40px 60px 40px;
         border-radius: 20px;
@@ -51,22 +51,23 @@ $light_gray: #F2F2F2;
     }
 
     &__form > input[type="text"] {
-        width: 353px;
+        width: 400px;
     }
 
     &__form > input[type="tel"] {
-        width: 353px;
+        width: 400px;
     }
 
     &__form > input[type="submit"] {
-        background: $dark_gray;
-        color: $yellow;
-        max-width: 264px;
+        border: 3px solid $dark_gray;
+        background: $yellow;
+        color: $dark_gray;
+        max-width: 275px;
         transition: all .3s linear;
     }
 
     &__form > input[type="submit"]:hover {
-        color: $orange;
+        background: $orange;
     }
     
     &__form > input[type="submit"]:disabled {
@@ -76,7 +77,7 @@ $light_gray: #F2F2F2;
     }
     
     &__form > input[type="submit"]:enabled:active {
-        color: $lemon_yellow;
+        background: $lemon_yellow;
     }
 }
 

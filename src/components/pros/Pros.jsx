@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import classes from './Pros.module.scss'
-import OrderButton from '../UI/orderButton/OrderButton'
-import CallButton from '../UI/callButton/CallButton'
+import OrderButton from '../UI/buttons/orderButton/OrderButton'
+import CallButton from '../UI/buttons/callButton/CallButton'
 import ProsItem from './components/prosItem/ProsItem'
-import OrderModal from '../UI/orderModal/OrderModal'
-import CallModal from '../UI/callModal/CallModal'
+import OrderModal from '../UI/modals/orderModal/OrderModal'
+import CallModal from '../UI/modals/callModal/CallModal'
 import delivery_icon from '../../assets/images/delivery_icon.png'
 import low_price_icon from '../../assets/images/low_price_icon.png'
 import quality_icon from '../../assets/images/quality_icon.png'
@@ -16,7 +16,11 @@ const Pros = () => {
         <>
             <div className={classes.pros__wrapper} id="pros">
                 <h2 className={classes.section_title}>Преимущества</h2>
-                <p className={classes.main_text}>Предварительные выводы неутешительны: синтетическое тестирование предполагает независимые способы реализации поставленных обществом задач. Безусловно, начало повседневной работы по формированию позиции однозначно определяет каждого участника как способного принимать собственные решения касаемо переосмысления внешнеэкономических политик. </p>
+                <p className={classes.main_text}>Предварительные выводы неутешительны: синтетическое
+                    тестирование предполагает независимые способы реализации поставленных обществом задач.
+                    Безусловно, начало повседневной работы по формированию позиции однозначно определяет
+                    каждого участника как способного принимать собственные решения касаемо переосмысления
+                    внешнеэкономических политик. </p>
                 <div className={classes.pros__cards}>
                     <ProsItem pros={{
                         image: delivery_icon,

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import classes from './Header.module.scss'
 import logo from './../../assets/images/logo.svg'
-import OrderButton from './../UI/orderButton/OrderButton'
+import OrderButton from './../UI/buttons/orderButton/OrderButton'
 import NavMenu from './components/navMenu/NavMenu'
-import OrderModal from '../UI/orderModal/OrderModal'
+import OrderModal from '../UI/modals/orderModal/OrderModal'
 
 const Header = () => {
     const [orderModalVisible, setOrderModalVisible] = useState(false)

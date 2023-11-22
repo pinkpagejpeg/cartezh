@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './OrderModal.module.scss'
-import close from '../../../assets/images/close.svg'
+import close from '../../../../assets/images/close.svg'
 
 const OrderModal = ({ visible, setVisible }) => {
     const rootClasses = [classes.orderModal]
@@ -16,7 +16,9 @@ const OrderModal = ({ visible, setVisible }) => {
         <div className={rootClasses.join(' ')}>
             <div className={classes.order_form__modal_content}>
                 <div className={classes.order_form__close_wrapper}>
-                    <button className={classes.button_close} onClick={handleCloseModal}><img src={close} alt="Close" /></button>
+                    <button className={classes.button_close} onClick={handleCloseModal}>
+                        <img src={close} alt="Close" />
+                    </button>
                 </div>
                 <h3 className={classes.form_title}>Форма заказа</h3>
                 <form className={classes.order_form__form}>

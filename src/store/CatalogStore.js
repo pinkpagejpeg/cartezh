@@ -1,5 +1,5 @@
 import { makeAutoObservable } from 'mobx'
-import { catalog } from '../mockData/catalog'
+import { catalog } from '../mockData/catalogData'
 
 class CatalogStore {
   catalog = [];
