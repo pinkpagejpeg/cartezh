@@ -20,7 +20,7 @@ const CallModal = ({ visible, setVisible }) => {
                         <img src={close} alt="Close" />
                     </button>
                 </div>
-                <h3 className={classes.form_title}>Форма заказа</h3>
+                <h3 className={classes.form_title}>Остались вопросы?</h3>
                 <form className={classes.call_form__form}>
                     <input type="text" className={classes.form_input} placeholder="Имя" required></input>
                     <input type="tel" className={classes.form_input} placeholder="Телефон" required></input>
