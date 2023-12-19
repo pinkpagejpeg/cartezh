@@ -18,7 +18,7 @@ const CatalogSlaider = ({ items }) => {
     }
 
     return (
-        <div id="prev_button" className={classes.catalog_slaider__wrapper}>
+        <div className={classes.catalog_slaider__wrapper}>
             <a className={classes.catalog_slaider__buttons} onClick={goPrev}>
                 <svg className={classes.catalog_slaider__next} xmlns="http://www.w3.org/2000/svg" width="28" height="51" viewBox="0 0 28 51">
                     <path d="M25.0376 1.99927L1.99997 25.0369" />
