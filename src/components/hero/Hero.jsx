@@ -13,9 +13,9 @@ const Hero = () => {
                     аудитории является четким доказательством простого факта: существующая теория
                     создаёт предпосылки для существующих финансовых и административных условий.</p>
                 <MoreButton isLink to="#pros">Подробнее</MoreButton>
-                <img className={classes.hero__scroll} src={hero_scroll} alt="Scroll" />
+                <img className={classes.hero__scroll} src={hero_scroll} alt="Иконка скролла" />
             </div>
-            <img className={classes.hero__image} src={hero_car} alt="Hero car" />
+            <img className={classes.hero__image} src={hero_car} alt="Желтая машина Chevrolet" />
         </div>
     );
 }

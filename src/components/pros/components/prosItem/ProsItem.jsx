@@ -5,7 +5,7 @@ const ProsItem = (props) => {
     return (
         <div className={classes.pros_item__wrapper}>
             <div className={classes.pros_item__image_wrapper}>
-                <img className={classes.pros_item__image} src={props.pros.image} />
+                <img className={classes.pros_item__image} src={props.pros.image} alt={props.pros.alt}/>
             </div>
             <h4 className={classes.pros_item__title}>{props.pros.title}</h4>
             <p className={classes.main_text}>{props.pros.text}</p>

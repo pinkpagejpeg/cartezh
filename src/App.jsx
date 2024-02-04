@@ -1,26 +1,20 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import './styles/App.scss'
-import Header from './components/header/Header'
-import Hero from './components/hero/Hero'
-import Pros from './components/pros/Pros'
-import Order from './components/order/Order'
-import Contacts from './components/contacts/Contacts'
-import Footer from './components/footer/Footer'
-import Catalog from './components/catalog/Catalog'
+import Landing from './components/pages/Landing'
+import NotFound from './components/pages/NotFound'
 
 function App() {
 
   return (
     <div className="App">
-      <div className="container">
-        <Header />
-        <Hero />
-        <Catalog />
-        <Pros />
-        <Order />
-        <Contacts />
-      </div>
-      <Footer />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Landing />} />
+          <Route exact path="/404" element={<NotFound />} />
+          <Route path="*" element={<Navigate to="/404" />} />
+        </Routes>
+      </Router>
     </div>
   )
 }

@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <footer className={classes.footer__wrapper}>
             <div className={classes.footer__container}>
-                <img className={classes.footer__logo} src={logo} alt="Logo" />
+                <img className={classes.footer__logo} src={logo} alt="Логотип Cartezh" />
                 <p className={classes.main_text}>Перспективное планирование говорит
                     о возможностях прогресса профессионального сообщества.</p>
                 <div className={classes.footer__dockbox}>
@@ -19,13 +19,13 @@ const Footer = () => {
                 </div>
                 <div className={classes.footer__socialbox}>
                     <a className={classes.footer__social_link} href="#">
-                        <img className={classes.footer__social_logo} src={twitter_logo} alt="Logo Twitter" />
+                        <img className={classes.footer__social_logo} src={twitter_logo} alt="Иконка Twitter" />
                     </a>
                     <a className={classes.footer__social_link} href="#">
-                        <img className={classes.footer__social_logo} src={telegram_logo} alt="Logo Telegram" />
+                        <img className={classes.footer__social_logo} src={telegram_logo} alt="Иконка Telegram" />
                     </a>
                     <a className={classes.footer__social_link} href="#">
-                        <img className={classes.footer__social_logo} src={tiktok_logo} alt="Logo TikTok" />
+                        <img className={classes.footer__social_logo} src={tiktok_logo} alt="Иконка TikTok" />
                     </a>
                 </div>
             </div>

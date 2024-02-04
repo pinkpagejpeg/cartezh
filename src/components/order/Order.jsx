@@ -25,7 +25,7 @@ const Order = () => {
                     <p className={classes.main_text}>Заказ будет бесплатно доставлен в удобное для вас время</p>
                 </div>
             </div>
-            <img className={classes.order__image} src={order_car} alt="Order car" />
+            <img className={classes.order__image} src={order_car} alt="Черная машина Mercedes-Benz" />
             <OrderForm />
         </div>
     );
