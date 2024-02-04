@@ -8,7 +8,7 @@ const CatalogSlaiderItem = (props) => {
     return (
         <>
             <div className={classes.slaider_item__wrapper}>
-                <img className={classes.slaider_item__image} src={props.item.image} />
+                <img className={classes.slaider_item__image} src={props.item.image} alt={props.item.name} />
                 <h4 className={classes.slaider_item__price}>{props.item.price} Р</h4>
                 <p className={classes.main_text}>{props.item.name}</p>
                 <OrderButton onClick={() => setOrderModalVisible(true)}>Отправить заявку</OrderButton>

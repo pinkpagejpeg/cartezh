@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <>
             <header className={classes.header__wrapper}>
-                <img className={classes.header__logo} src={logo} alt="logo" />
+                <img className={classes.header__logo} src={logo} alt="Логотип Cartezh" />
                 <NavMenu />
                 <OrderButton onClick={() => setOrderModalVisible(true)}>Отправить заявку</OrderButton>
             </header>
