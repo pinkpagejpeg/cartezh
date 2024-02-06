@@ -9,7 +9,6 @@ function App() {
 
   return (
     <div className="App">
-      <SpeedInsights />
       <Router>
         <Routes>
           <Route exact path="/" element={<Landing />} />
@@ -17,6 +16,7 @@ function App() {
           <Route path="*" element={<Navigate to="/404" />} />
         </Routes>
       </Router>
+      <SpeedInsights />
     </div>
   )
 }
