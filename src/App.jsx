@@ -1,4 +1,5 @@
 import React from 'react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import './styles/App.scss'
 import Landing from './components/pages/Landing'
@@ -8,6 +9,7 @@ function App() {
 
   return (
     <div className="App">
+      <SpeedInsights />
       <Router>
         <Routes>
           <Route exact path="/" element={<Landing />} />
