@@ -4,9 +4,12 @@ import { getMap } from '../../../../utils/helpers/getMap'
 
 const ContactsMap = () => {
     useEffect(() => {
-        const map = getMap()
+        const {map, marker } = getMap()
 
-        return () => map.remove()
+        return () =>  {
+            marker.remove()
+            map.remove()
+        }
     }, [])
 
     return (
