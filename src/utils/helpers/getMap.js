@@ -16,10 +16,13 @@ export const getMap = () => {
     })
 
     const marker = new mapboxgl.Marker({
-       color: '#FFCD36',
+        color: '#FFCD36',
     })
         .setLngLat([longitude, latitude])
         .addTo(map)
 
-    return map
+    return {
+        map: map,
+        marker: marker
+    };
 };
