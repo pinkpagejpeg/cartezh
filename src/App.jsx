@@ -12,8 +12,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Landing />} />
-          <Route exact path="/404" element={<NotFound />} />
-          <Route path="*" element={<Navigate to="/404" />} />
+          <Route exact path="/sitemap.xml" element={<Navigate to="../sitemap.xml" />} />
+          <Route exact path="/robots.txt" element={<Navigate to="../robots.txt" />} />
+          <Route exact path="*" element={<NotFound />} />
         </Routes>
       </Router>
       <SpeedInsights />
