@@ -11,9 +11,11 @@
         {
             "source": "/(.*)",
             "destination": "/index.html"
+        },
+        {
+            "source": "/(.*)",
+            "status": 404,
+            "destination": "/404"
         }
-    ],
-    "error": {
-        "404": "/404"
-    }
+    ]
 }
