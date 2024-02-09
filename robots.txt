@@ -1,1 +1,4 @@
 User-agent: *
+Disallow: /404
+
+Sitemap: https://cartezh.vercel.app/sitemap.xml
