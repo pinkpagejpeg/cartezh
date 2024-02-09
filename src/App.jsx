@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Landing />} />
           <Route exact path="/404" element={<NotFound />} />
-          <Route path="*" element={<Navigate to="/404" />} />
+          {/* <Route path="*" element={<Navigate to="/404" />} /> */}
         </Routes>
       </Router>
       <SpeedInsights />
