@@ -3,14 +3,18 @@
         {
             "source": "/robots.txt",
             "destination": "/robots.txt"
-          },
-          {
+        },
+        {
             "source": "/sitemap.xml",
             "destination": "/sitemap.xml"
-          },
+        },
         {
-            "source": "/(.*)",
+            "source": "/",
             "destination": "/"
+        },
+        {
+            "source": "*",
+            "destination": "/404"
         }
     ]
 }
