@@ -1,13 +1,15 @@
 import React from 'react'
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import classes from '../../styles/NotFound.module.scss'
 import CallButton from '../UI/buttons/callButton/CallButton';
 import notFound from '../../assets/images/404.jpg'
 
 const NotFound = () => {
+    const navigate = useNavigate();
     const backLanding = () => {
-        Navigate('/')
-    }
+        navigate('/');
+    };
+
     return (
         <div className={classes.notfound__wrapper}>
             <h2 className={classes.notfound__text}>Запрашиваемая страница не найдена</h2>
