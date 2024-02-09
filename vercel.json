@@ -13,7 +13,7 @@
             "destination": "/"
         },
         {
-            "source": "*",
+            "source": "/(.*)",
             "destination": "/404"
         }
     ]
