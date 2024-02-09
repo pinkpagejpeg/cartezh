@@ -12,8 +12,8 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Landing />} />
-          <Route exact path="/sitemap.xml" element={<Navigate to="../sitemap.xml" />} />
-          <Route exact path="/robots.txt" element={<Navigate to="../robots.txt" />} />
+          <Route exact path="/sitemap.xml" element={<a href="../sitemap.xml"/>} />
+          <Route exact path="/robots.txt" element={<a href="../robots.txt"/>} />
           <Route exact path="*" element={<NotFound />} />
         </Routes>
       </Router>
