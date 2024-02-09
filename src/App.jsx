@@ -12,8 +12,6 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Landing />} />
-          <Route exact path="/sitemap.xml" element={<a href="../sitemap.xml"/>} />
-          <Route exact path="/robots.txt" element={<a href="../robots.txt"/>} />
           <Route exact path="*" element={<NotFound />} />
         </Routes>
       </Router>
