@@ -10,8 +10,8 @@ const Footer = () => {
         <footer className={classes.footer__wrapper}>
             <div className={classes.footer__container}>
                 <img className={classes.footer__logo} src={logo} alt="Логотип Cartezh" />
-                <p className={classes.main_text}>Перспективное планирование говорит
-                    о возможностях прогресса профессионального сообщества.</p>
+                <p className={classes.main_text}>©2023-2024 компания ООО "Cartezh" все права защищены
+                    Поддержка: cartezh_support@gmail.com</p>
                 <div className={classes.footer__dockbox}>
                     <a className={classes.footer__dock} href="#">Условия</a>
                     <a className={classes.footer__dock} href="#">Конфиденциальность</a>

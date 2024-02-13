@@ -9,9 +9,9 @@ const Hero = () => {
         <div className={classes.hero__wrapper}>
             <div className={classes.hero__info}>
                 <h1 className={classes.hero__title}>Всё для вашего автомобиля</h1>
-                <p className={classes.main_text}>Высокий уровень вовлечения представителей целевой
-                    аудитории является четким доказательством простого факта: существующая теория
-                    создаёт предпосылки для существующих финансовых и административных условий.</p>
+                <p className={classes.main_text}>Найдите идеальные автозапчасти для вашего автомобиля! 
+                Широкий выбор запчастей высокого качества по выгодным ценам. У нас вы найдете все, 
+                что нужно для обслуживания и ремонта вашего авто.</p>
                 <MoreButton isLink to="#pros">Подробнее</MoreButton>
                 <img className={classes.hero__scroll} src={hero_scroll} alt="Иконка скролла" />
             </div>
